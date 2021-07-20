@@ -1,5 +1,5 @@
 # My Github Profile 
-This is a React Project to show my github profile using the free version of the Github API.
+This is a React Project to show my github profile using the free version of the Github API. For the layout, since it's a simple web app, I only used flexbox. 
 
 ## Dependencies
 1. react@17.0.2.
@@ -24,4 +24,11 @@ Since we are using react we use components to split the web app into separated c
    1. `yarn start`
 
 4. open a browser and navigate to [http://localhost:3000](http://localhost:3000) to see the main page. 
+
+## Screenshots 
+### first part of the home
+![home1](public/home1.png)
+### bottom part of the home 
+![home2](public/home2.png)
+
 
