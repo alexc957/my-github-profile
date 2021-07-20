@@ -8,8 +8,14 @@ export default function useFetch(url) {
         setLoading(true);
         const response = await fetch(url);
         const responseJson = await response.json();
-        setData(responseJson);
+        if(responseJson.message){
+            setError(true)
+        }else{
+            setError(false);
+            setData(responseJson);
+        }
         setLoading(false);
+       
     }
     useEffect(()=>{
 
@@ -19,6 +25,7 @@ export default function useFetch(url) {
             getData();
 
         }catch(e){
+            console.log('error');
             setError(true)
         }
 
