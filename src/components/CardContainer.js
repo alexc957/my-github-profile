@@ -34,7 +34,7 @@ export default function CardContainer() {
 
 
         </div>
-        <Pagination page={page} setPage={setPage} />
+        <Pagination page={page} setPage={setPage} currentLength={data.length} />
         </>
     )
 }
