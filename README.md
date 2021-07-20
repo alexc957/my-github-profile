@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1cdd069a-ea37-4471-a760-7dc752f09792/deploy-status)](https://app.netlify.com/sites/alexgithubprofile/deploys)
+
 # My Github Profile 
 This is a React Project to show my github profile using the free version of the Github API. For the layout, since it's a simple web app, I only used flexbox. 
 
