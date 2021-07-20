@@ -9,7 +9,7 @@ export default function Header({user}) {
             <p className="about">
                 {user.bio}
             </p>
-            <div className="follows">
+            <div className="row-space-between">
                 <span>followers: {user.followers}</span>
                 <span>following: {user.following}</span>
             </div>

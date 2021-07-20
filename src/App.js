@@ -24,7 +24,7 @@ function App() {
 
       <Main/>
 
-      <footer>footer lol </footer>
+      <footer className="footer" >Copyright: alexcoronel1995@gmail.com </footer>
 
     </div>
   );

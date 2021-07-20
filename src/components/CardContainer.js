@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import useFetch from '../hooks/useFetch';
 
 import Card from './Card';
+import Pagination from './Pagination';
 
 
 const REPOS_URL = "https://api.github.com/users/alexc957/repos?per_page=6";
@@ -9,9 +10,7 @@ export default function CardContainer() {
 
     const [page, setPage] = useState(1)
     const {data,loading, error} = useFetch(`${REPOS_URL}&page=${page}`);
-    //const other = useScroll()
 
-   // const {data,loading, error} = useScroll();
 
    
 
@@ -35,9 +34,7 @@ export default function CardContainer() {
 
 
         </div>
-        <div>
-            {page>1 && <button onClick={()=> setPage(page - 1)}>previous</button>} {page} <button onClick={()=>setPage(page + 1)} >next</button>
-        </div>
+        <Pagination page={page} setPage={setPage} />
         </>
     )
 }
