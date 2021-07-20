@@ -1,38 +1,131 @@
-.App {
+.navbar {
+  background-color: #203647;
+  width: 100%;
+  height: 3rem;
+}
+
+.footer{
+  padding-top: 0.7rem;
+  margin-top: 2rem;
+  width: 100%;
+  height: 4rem;
+  background-color: #4da8da;
   text-align: center;
+  font-size: small;
+  font-family: cursive;
+  color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.app-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  margin-top: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.avatar{
+  height: 9rem;
+
+  border-radius: 50%;
+  border: 2px solid black;
+
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.link {
+  text-decoration: none;
+  color: #757575 ;
+
+
+}
+
+
+.link:hover {
+  text-decoration: underline;
+  color: #424242;
+}
+
+
+.about {
+  font-family: cursive;
+  padding: 0.8rem;
+  font-size: 0.8rem;
+  width: 16rem;
+  border-radius: 1%;
+  border: 2px solid black;
+  text-align: center;
+
+}
+.row-space-between{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 11rem;
+
+}
+
+.main {
+  
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
 }
 
-.App-link {
-  color: #61dafb;
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.card {
+  border-radius: 10%;
+  border: 2px solid #bdbdbd ;
+  box-shadow: 5px 10px #888888;
+  width: 16rem;
+  height: 16rem;
+  padding: 0.6rem;
+
+  margin: 0.8rem;
+  
+  
+}
+
+.darker-grey {
+  color: #212121  ;
+}
+
+
+.text-justify {
+  text-align: justify;
+}
+
+.description {
+  font-size: 1rem;
+  color: #757575;
+}
+
+
+.text-small {
+  font-size: 0.9rem;
+  color: #424242;
+}
+
+.pag-link{
+  border: none;
+  background-color: inherit;
 }
